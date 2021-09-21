@@ -10,8 +10,13 @@ return(
     </NavLink>
 
     <NavLink to="/UserProfile">
-      <Menu.Item>UserProfile</Menu.Item>
+      <Menu.Item>User Profile</Menu.Item>
     </NavLink>
+
+    <NavLink to="/StuffAboutUser">
+      <Menu.Item>Stuff About User</Menu.Item>
+    </NavLink>
+
     
 </Menu>
 
