@@ -7,7 +7,7 @@ const UserProvider = (props) => {
     email: "mjsivertsen@msn.com",
     firstName: "Michaela",
     lastName: "Sivertsen",
-    // avatar: <img class="ui avatar image" src="/images/wireframe/square-image.png" />
+    avatar: <img class="ui mini circular image" src="https://m.media-amazon.com/images/I/41RORFSdPrL._AC_SS450_.jpg" />,
     updateUser: (user) => setState({ ...state, ...user}),
   });
 
