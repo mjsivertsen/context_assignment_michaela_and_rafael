@@ -3,7 +3,7 @@ import { Form } from "semantic-ui-react";
 import { UserContext } from "../providers/UserProvider";
 
 const UserForm = () => {
-  const { email, firstName, lastName, avatar } = useContext(UserContext);
+  const { email, firstName, lastName, avatar, updateUser } = useContext(UserContext);
   const [userData, setUserData] = useState({
     email: email,
     firstName: firstName,
@@ -12,13 +12,13 @@ const UserForm = () => {
   });
 
   const submitHandler = (e) => {
-
+    e.preventDefault();
+    updateUser(userData)
   }
 
   const changeHandler = (e, { name, value }) => {
-
-
-  }
+    setUserData({...userData, [name]: value})
+  };
 
   return (
     <Form onSubmit={submitHandler}>
@@ -50,3 +50,5 @@ const UserForm = () => {
         </Form>
   )
 }
+
+export default UserForm
