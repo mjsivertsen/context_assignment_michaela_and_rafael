@@ -3,10 +3,11 @@ import { Switch, Route } from "react-router-dom"
 import { Container } from "semantic-ui-react"
 import Home from "./components/Home";
 import UserProfile from "./components/UserProfile";
+import './App.css';
 
 function App() {
   return (
-    <>
+    <div className="container">
       <NavBar />
       <Container>
         <Switch>
@@ -15,7 +16,7 @@ function App() {
           render={ () => <UserProfile /> } />
         </Switch>
       </Container>
-    </>
+    </div>
   );
 }
 
