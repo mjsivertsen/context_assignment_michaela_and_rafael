@@ -4,6 +4,7 @@ import { Container } from "semantic-ui-react"
 import Home from "./components/Home";
 import UserProfile from "./components/UserProfile";
 import './App.css';
+import StuffAboutUser from "./components/StuffAboutUser";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/UserProfile" 
           render={ () => <UserProfile /> } />
+          <Route exact path="/StuffAboutUser"
+          render={ () => <StuffAboutUser /> } />
         </Switch>
       </Container>
     </div>

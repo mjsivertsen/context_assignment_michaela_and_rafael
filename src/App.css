@@ -48,4 +48,8 @@
   display: flex;
   align-items: center;
   width: 50px;
+
+
+.tablecard {
+  padding: 12px;
 }

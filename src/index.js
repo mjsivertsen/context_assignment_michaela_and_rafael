@@ -6,13 +6,16 @@ import "semantic-ui-css/semantic.min.css"
 import {BrowserRouter} from "react-router-dom"
 import reportWebVitals from './reportWebVitals';
 import UserProvider from './providers/UserProvider';
+import StuffAboutUserProvider from './providers/StuffAboutUserProvider';
 
 ReactDOM.render(
-  <UserProvider>
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
-  </UserProvider>,
+  <StuffAboutUserProvider>
+    <UserProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </UserProvider>
+  </StuffAboutUserProvider>,
   document.getElementById('root')
 );
 
