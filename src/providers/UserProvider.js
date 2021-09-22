@@ -8,6 +8,7 @@ const UserProvider = (props) => {
     firstName: "Michaela",
     lastName: "Sivertsen",
     phone: "801-865-1119",
+    // @ts-ignore
     avatar: <img class="ui mini circular image" src="https://m.media-amazon.com/images/I/41RORFSdPrL._AC_SS450_.jpg" />,
     updateUser: (user) => setState({ ...state, ...user}),
   });
