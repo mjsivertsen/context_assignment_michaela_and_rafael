@@ -12,7 +12,6 @@ const UserProvider = (props) => {
     updateUser: (user) => setState({ ...state, ...user}),
   });
 
-
   return (
     <UserContext.Provider value={{ ...state}}>
       {props.children}
