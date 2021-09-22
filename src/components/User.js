@@ -7,8 +7,8 @@ import '../App.css';
 const User = () => {
     const { email, firstName, lastName, phone, avatar } = useContext(UserContext)
   return (
-    <Card>
-      <Card.Content>
+    <Card color='black'>
+      <Card.Content textAlign='center'>
       <Card.Header>User</Card.Header>
     </Card.Content>
     <Card.Content>

@@ -47,10 +47,9 @@
 .avatar {
   display: flex;
   align-items: center;
-  width: 40px;
-}
+  width: 50px;
+
 
 .tablecard {
   padding: 12px;
-  
 }

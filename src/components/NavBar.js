@@ -4,25 +4,18 @@ import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
 return(
-  <Menu>
+  <Menu inverted color="black">
     <NavLink to="/">
-    <Menu.Item>Home</Menu.Item>
+      <Menu.Item>Home</Menu.Item>
     </NavLink>
-
     <NavLink to="/UserProfile">
-      <Menu.Item>User Profile</Menu.Item>
+      <Menu.Item>UserProfile</Menu.Item>
     </NavLink>
-
     <NavLink to="/StuffAboutUser">
       <Menu.Item>Stuff About User</Menu.Item>
     </NavLink>
-
-    
-</Menu>
-
-)
-
-
+  </Menu>
+  )
 }
 
 export default NavBar;
