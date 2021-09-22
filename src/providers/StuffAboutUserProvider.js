@@ -2,19 +2,19 @@ import React, { useState } from "react"
 
 export const StuffAboutUserContext = React.createContext();
 
-const StuffAboutUserProvider = () => {
-  const [car, favoriteFruit, currentlyWatching, pets] = useState({
-    car: {makeModel: "Subaru Crosstrek", color: "orange"},
-    favoriteFruit: "sour blueberries",
+const StuffAboutUserProvider = (props) => {
+  const [state, setState] = useState({
+    car: "Orange Subaru Crosstrek",
+    favoriteFruit: "Sour Blueberries",
     currentlyWatching: "Grey's Anatomy",
-    pets: [{species: "cat", name: "Tony"}, {species: "cat", name: "Persephone"}],
+    pets: "Tony and Persephone",
     updateStuffAboutUser: (StuffAboutUser) => setState({ ...state, ...StuffAboutUser}),
   });
 
   return( 
-    <StuffAboutUserContext value={{...state}}>
+    <StuffAboutUserContext.Provider value={{...state}}>
       {props.children}
-    </StuffAboutUserContext>
+    </StuffAboutUserContext.Provider>
   );
 
 };
